@@ -16,7 +16,7 @@ class TaskMemberAdminInline(admin.StackedInline):
 
     raw_id_fields = ('member', )
     readonly_fields = ('created', )
-    fields = readonly_fields + ('member', 'status', 'motivation')
+    fields =  readonly_fields + ('member', 'status', 'motivation', 'time_spent')
     extra = 0
 
 
@@ -25,7 +25,7 @@ class TaskFileAdminInline(admin.StackedInline):
 
     raw_id_fields = ('author', )
     readonly_fields = ('created', )
-    fields = readonly_fields + ('author', 'file')
+    fields =  readonly_fields + ('author', 'file')
     extra = 0
 
 
@@ -57,6 +57,7 @@ class TaskAdmin(admin.ModelAdmin):
         'title', 'description',
         'skill', 'time_needed',
         'status', 'date_status_change',
+        'people_needed',
         'project', 'author',
         'tags',
         'deadline',

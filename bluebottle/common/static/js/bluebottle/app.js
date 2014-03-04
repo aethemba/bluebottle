@@ -174,11 +174,21 @@ App.Adapter = DS.DRF2Adapter.extend({
         "organizations/manage": "organizations/manage",
         "organizations/addresses/manage": "organizations/addresses/manage",
         "organizations/documents/manage": "organizations/documents/manage",
+        "bb_projects/plans/manage": "bb_projects/plans/manage",
+        "bb_organizations/manage": "bb_organizations/manage",
+        "bb_organizations/documents/manage": "bb_organizations/documents/manage",
         "bb_projects/budgetlines/manage": "bb_projects/budgetlines/manage",
         "users/activate": "users/activate",
         "users/passwordset": "users/passwordset",
         "homepage": "homepage",
-        "contact/contact": "contact/contact"
+        "contact/contact": "contact/contact",
+        // TODO: Are the plurals below still needed?
+        "bb_projects/wallposts/media": "bb_projects/wallposts/media",
+        "bb_projects/wallposts/text": "bb_projects/wallposts/text",
+        "bb_projects/campaigns/manage": "bb_projects/campaigns/manage",
+        "bb_projects/pitches/manage": "bb_projects/pitches/manage",
+        "bb_organizations/addresses/manage": "bb_organizations/addresses/manage",
+        "bb_projects/ambassadors/manage": "bb_projects/ambassadors/manage",
     }
 });
 

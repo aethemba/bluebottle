@@ -4,8 +4,9 @@ Factory.define('task', {
     },
     title: 'Takeover Naboo',
     description: 'Title says it all',
+    end_goal: 'Description says it all',
     status: 'open',
-    time_needed: 8
+    time_needed: 8,
 });
 
 Factory.define('taskFile', {
@@ -28,8 +29,8 @@ Factory.define('taskMember', {
 		return attr('userPreview');
 	},
 	task: function () {
-    	return attr('task');
-    },
+    return attr('task');
+  },
 	status: 'applied',
 	motivation: 'Build a better Death Star',
 });

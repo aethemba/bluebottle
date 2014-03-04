@@ -81,8 +81,8 @@ class BaseTask(models.Model):
 
     title = models.CharField(_('title'), max_length=100)
     description = models.TextField(_('description'))
-    end_goal = models.TextField(_('end goal'))
-    location = models.TextField(_('location'))
+    end_goal = models.TextField(_('end_goal'))
+    location = models.CharField(_('location'), max_length=200)
 
     project = models.ForeignKey(settings.PROJECTS_PROJECT_MODEL)
     # See Django docs on issues with related name and an (abstract) base class:
